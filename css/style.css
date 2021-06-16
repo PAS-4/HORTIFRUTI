@@ -24,6 +24,7 @@ html{
     font-size: 83.3%;
 }
 
+/*HEADER*/
 header{
     position: absolute;
     top: 0;
@@ -102,17 +103,144 @@ header p{
     color: #00c000;
 }
 
-.slideAlpha{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .99), rgba(0, 0, 0, .5));
-}
+/*HEADER*/
 
-.slide{
+/*.CAPA*/
+.capa{
     width: 100vw;
     height: 100vh;
     background-image: url("../image/backSlide.jpg");
     background-size: cover;
     background-position: 50%;
 }
+
+.capaAlpha{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .99), rgba(0, 0, 0, .5));
+}
+
+.container{
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slogan p{
+    font-size: 7rem;
+    font-family: 'Amita';
+    color: #ffffff90;
+    transform: translateY(-100px);
+    opacity: 0;
+    margin-top: -70px;
+    margin-bottom: -70px;
+    text-shadow: 0px 0px 15px #008000;
+    animation: origin .5s forwards;
+}
+
+/*FORM*/
+.cel-email{
+    transform: translateY(100px);
+    background-color: #ffffff10;
+    box-shadow: 0px 0px 10px #ffffff;
+    border-radius: 5%;
+    padding: 20px;
+    font-family: 'Amita';
+    font-weight: bolder;
+    animation: origin .5s forwards;
+    overflow: hidden;
+}
+
+.cel-email p{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff90;
+}
+
+.label-inside{
+    position: relative;
+    padding-top: 15px;
+    margin: 5% auto;
+}
+
+.label-inside input{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #ffffff80;
+    color: #008000;
+    font-family: 'Amita';
+    font-weight: bolder;
+    transition: all .3s ease-out;
+    transform: translateX(250px);
+    animation: origin 1s .5s forwards;
+    opacity: 0;
+}
+
+.label-inside input:focus, .label-inside input:valid{
+    border-bottom: 2px solid #008000;
+    color: #ffffff90;
+}
+
+.label-inside label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.2rem;
+    color: #ffffff90;
+    pointer-events: none;
+    margin-top: 15px;
+    transition: all .3s ease-out;
+    transform: translateX(85px);
+    animation: origin 1s .5s forwards;
+}
+
+.label-inside input:focus + label, .label-inside input:valid + label{
+    margin-top: 0;
+    font-size: 1rem;
+    color: #008000;
+}
+
+.label-inside input:focus .cel-email{
+    box-shadow: 0px 0px 5px #008000;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Amita';
+    background-color: transparent;
+    cursor: pointer;
+    color: #ffffff90;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+@keyframes origin{
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/*FORM*/
+/*FORM*/
+
+
+/*FORM*/
+/*.SLIDE*/
